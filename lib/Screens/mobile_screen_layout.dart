@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:my_app/Colors/colors.dart';
+import 'package:my_app/Mobile_Tabs/MobileCalls.dart';
+import 'package:my_app/Mobile_Tabs/MobileChat.dart';
+import 'package:my_app/Mobile_Tabs/MobileStatus.dart';
 import 'package:my_app/Widget/contact_list.dart';
+import 'package:my_app/Widget/mobile_calls.dart';
+import 'package:my_app/Widget/mobile_status.dart';
 
 class MobileScreenLayout extends StatelessWidget {
   const MobileScreenLayout({ Key? key }) : super(key: key);
@@ -40,6 +45,7 @@ class MobileScreenLayout extends StatelessWidget {
             labelStyle: TextStyle(
               fontWeight: FontWeight.bold
             ),
+            
             tabs: [
               Tab(
                 text: 'CHATS',
@@ -53,15 +59,14 @@ class MobileScreenLayout extends StatelessWidget {
             ]
           ),
         ),
-        body: const ContactList(),
-        floatingActionButton: FloatingActionButton(
-          onPressed: (){},
-          backgroundColor: tabColor,
-          child: const Icon(
-            Icons.comment,
-            color: Colors.white,
-          ),
+        body: const TabBarView(
+          children: [
+            MobileChat(),
+            MobileStatus(),
+            MobileCalls()
+          ]
         ),
+        
       )
     );
   }

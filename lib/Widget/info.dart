@@ -37,3 +37,61 @@ const messages = [
     'time': '10:10 am'
   }
 ];
+
+
+const calls = [
+  {
+    'isMe': false,
+    'name': 'Mariah',
+    'isVideo': true,
+    'isAudio' : false,
+    'date' : 'March 15',
+    'time' : '15:19',
+    'profilePic': ''
+  },
+  {
+    'isMe': true,
+    'name': 'Mariah',
+    'isVideo': true,
+    'isAudio' : false,
+    'date' : 'March 15',
+    'time' : '15:19',
+    'profilePic': ''
+  },
+  {
+    'isMe': false,
+    'name': 'Mariah',
+    'isVideo': true,
+    'isAudio' : false,
+    'date' : 'March 15',
+    'time' : '15:19',
+    'profilePic': ''
+  },
+  {
+    'isMe': false,
+    'name': 'Mariah',
+    'isVideo': true,
+    'isAudio' : false,
+    'date' : 'March 15',
+    'time' : '15:19',
+    'profilePic': ''
+  },
+  {
+    'isMe': false,
+    'name': 'Mariah',
+    'isVideo': false,
+    'isAudio' : true,
+    'date' : 'March 15',
+    'time' : '15:12',
+    'profilePic': ''
+  },
+  {
+    'isMe': true,
+    'name': 'Mariah',
+    'isVideo': true,
+    'isAudio' : false,
+    'date' : 'March 15',
+    'time' : '15:10',
+    'profilePic': ''
+  },
+];
