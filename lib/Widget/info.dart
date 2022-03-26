@@ -95,3 +95,14 @@ const calls = [
     'profilePic': ''
   },
 ];
+
+const ownerDetails = {
+  'name': 'Dev. Beloved',
+  // 'status': [
+  //   'Front-end Developer'
+  //   'Front-end Web & Native Developer'
+  //   'Front-end Web Developer'
+  // ],
+  'status': 'Front-end Developer',
+  'phoneNumber': '+2348140615129'
+};
