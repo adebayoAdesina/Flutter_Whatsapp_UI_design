@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:my_app/Widget/mobile_call_info.dart';
+import 'package:my_app/Views/Mobile/mobile_call_info.dart';
 
-import '../Colors/colors.dart';
-import 'info.dart';
+import '../../Colors/colors.dart';
+import '../../Widget/info.dart';
 
 class MobileCallsView extends StatelessWidget {
   const MobileCallsView({ Key? key }) : super(key: key);

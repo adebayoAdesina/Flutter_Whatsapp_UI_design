@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:my_app/Colors/colors.dart';
 import 'package:my_app/Widget/chat_list.dart';
 import 'package:my_app/Widget/contact_list.dart';
-import 'package:my_app/Widget/web_chat_appbar.dart';
-import 'package:my_app/Widget/web_profile_bar.dart';
-import 'package:my_app/Widget/web_search_bar.dart';
+import 'package:my_app/Views/Web/web_chat_appbar.dart';
+import 'package:my_app/Views/Web/web_profile_bar.dart';
+import 'package:my_app/Views/Web/web_search_bar.dart';
 
 class WebScreenLayout extends StatelessWidget {
   const WebScreenLayout({ Key? key }) : super(key: key);

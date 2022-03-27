@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../Colors/colors.dart';
+import '../../Colors/colors.dart';
 
 class MobilePrivacyPage extends StatefulWidget {
   const MobilePrivacyPage({ Key? key }) : super(key: key);

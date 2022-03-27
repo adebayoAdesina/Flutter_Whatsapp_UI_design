@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_app/Colors/colors.dart';
 
-import 'info.dart';
+import '../../Widget/info.dart';
 
 class MobileCallInfo extends StatelessWidget {
   

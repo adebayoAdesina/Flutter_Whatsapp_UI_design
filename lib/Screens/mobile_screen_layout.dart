@@ -4,9 +4,9 @@ import 'package:my_app/Mobile_Tabs/MobileCalls.dart';
 import 'package:my_app/Mobile_Tabs/MobileChat.dart';
 import 'package:my_app/Mobile_Tabs/MobileStatus.dart';
 import 'package:my_app/Widget/contact_list.dart';
-import 'package:my_app/Widget/mobile_appbar_search.dart';
-import 'package:my_app/Widget/mobile_calls.dart';
-import 'package:my_app/Widget/mobile_settings_page.dart';
+import 'package:my_app/Views/Mobile/mobile_appbar_search.dart';
+import 'package:my_app/Views/Mobile/mobile_calls.dart';
+import 'package:my_app/Views/Mobile/mobile_settings_page.dart';
 import 'package:my_app/Widget/mobile_status.dart';
 
 class MobileScreenLayout extends StatelessWidget {

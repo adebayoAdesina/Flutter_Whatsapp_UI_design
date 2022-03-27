@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:my_app/Colors/colors.dart';
 import 'package:my_app/Widget/info.dart';
-import 'package:my_app/Widget/mobile_account_page.dart';
-import 'package:my_app/Widget/mobile_profile_page.dart';
+import 'package:my_app/Views/Mobile/mobile_account_page.dart';
+import 'package:my_app/Views/Mobile/mobile_profile_page.dart';
 
 class MobileSettingsPage extends StatelessWidget {
   const MobileSettingsPage({ Key? key }) : super(key: key);
@@ -22,40 +22,45 @@ class MobileSettingsPage extends StatelessWidget {
         physics: const ScrollPhysics(),
         child: Column(
           children: [
-            ListTile(
-              onTap: (() {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) => const MobileProfilePage()
-                  )
-                );
-              }),
-              leading: const CircleAvatar(
-                    backgroundColor: Colors.white,
-                    radius: 32,
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 8.0),
+              child: ListTile(
+                onTap: (() {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => const MobileProfilePage()
+                    )
+                  );
+                }),
+                leading: const CircleAvatar(
+                      backgroundColor: Colors.white,
+                      radius: 32,
+                    ),
+                title: Text(
+                  ownerDetails['name'].toString(),
+                  style: const TextStyle(
+                    fontWeight: FontWeight.w500
                   ),
-              title: Text(
-                ownerDetails['name'].toString(),
-                style: const TextStyle(
-                  fontWeight: FontWeight.w500
                 ),
-              ),
-              subtitle: Text(
-                ownerDetails['status'].toString(),
-                style: const TextStyle(
-                  color: Colors.grey
+                subtitle: Text(
+                  ownerDetails['status'].toString(),
+                  style: const TextStyle(
+                    color: Colors.grey
+                  ),
                 ),
-              ),
-              trailing: IconButton(
-                onPressed: (){}, 
-                icon: const Icon(
-                  Icons.qr_code,
-                  color: tabColor,
-                  size: 27,
+                trailing: IconButton(
+                  onPressed: (){}, 
+                  icon: const Icon(
+                    Icons.qr_code,
+                    color: tabColor,
+                    size: 27,
+                  ),
                 ),
               ),
             ),
-      
+            Divider(
+              color: Colors.white.withOpacity(0.2),
+            ),
             const SizedBox(
               height: 18,
             ),

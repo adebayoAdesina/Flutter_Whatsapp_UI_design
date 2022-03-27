@@ -22,10 +22,14 @@ class MobileStatusView extends StatelessWidget {
                   backgroundColor: Colors.white,
                   radius: 30,
                 ),
-                Icon(
-                  Icons.add_circle,
-                  color: tabColor,
-                  size: 30,
+                Positioned(
+                  top: 30,
+                  left: 30,
+                  child: Icon(
+                    Icons.add_circle,
+                    color: tabColor,
+                    size: 30,
+                  ),
                 )
             ]
             ),
